@@ -55,7 +55,8 @@ defmodule Blog.MixProject do
       {:bandit, "~> 1.5"},
       {:nimble_publisher, "~> 1.1"},
       {:makeup_elixir, "~> 1.0"},
-      {:makeup_erlang, "~> 1.0"}
+      {:makeup_erlang, "~> 1.0"},
+      {:timex, "~> 3.7"}
     ]
   end
 

@@ -8,6 +8,8 @@ defmodule BlogWeb.RSSController do
 
   def index(conn, _params) do
     articles = Blog.Articles.list_articles()
-    render(conn, "index.html", articles: articles)
+    conn
+    |> put_root_layout(false)
+    |> render("index.html", articles: articles)
   end
 end
