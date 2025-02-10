@@ -1,124 +1,123 @@
 @layer components {
   
-    body {
-      @apply border-pink-600 border-t-4;
-      font-family: 'Roboto', sans-serif;
-    }
-    
-    body.homepage {
-      background: #2a2a2a; border-top: 0; height: 100%;
-      #banner{
-        height: 66vh;
-        display: block;
-        text-indent: -9999px;
-      }
-      #desc{margin: 0 0 0 5vw; height: 15vh;}
-      h1{float: left; clear:both; letter-spacing: -1px; background-color: #fff; line-height: 7.5vh; font-size: 4.5vh; font-weight: bold; color: #2a2a2a; padding: 0 10px; margin: 0; white-space: nowrap;}
-      h2{float: left; clear:both; letter-spacing: -1px; background-color: #ff00f0; line-height: 7.5vh; font-size: 4vh; font-weight: normal; color: #fff; padding: 0 10px; margin: 0; white-space: nowrap;}
-      #links{margin: 3vh 0 0 5vw;}
-      #links a{display: block; color: #ff00f0; text-decoration: underline;}
-      #links a img{width: 3.5vh; height: 3.5vh;}
-    }
-  
-    img#logo {
-      @apply mx-auto my-4;
-      width: 40px; height: 40px;
-    }
-  
-    header {
-      @apply bg-gray-700 py-4;
-      h1 {
-        @apply text-white text-6xl capitalize tracking-tight py-4;
-        font-family: 'Source Serif Pro', serif;
-        font-weight: 700;
-      }
-  
-      h3.author {
-        @apply font-normal normal-case italic text-base text-gray-100 pt-0 pb-2;
-      }
-    }
-  
-    article.post {
-      @apply p-6 text-lg;
-  
-      h1 {
-        @apply font-black text-6xl capitalize tracking-tight py-4;
-      }
-  
-      h2 {
-        @apply font-bold text-4xl capitalize tracking-tight pt-8 pb-2;
-      }
-    
-      h3 {
-        @apply font-bold text-2xl capitalize tracking-tight pt-8 pb-2;
-      }
-    
-      blockquote {
-        @apply font-thin text-4xl tracking-tight p-4 italic text-pink-600 leading-normal border-t border-b border-pink-600 my-4;
-        font-family: 'EB Garamond', serif;
-    
-        p {
-          @apply px-16;
-        }
-      }
-    
-      img {
-        @apply mx-auto mt-4 w-full;
-      }
-    
-      figcaption {
-        @apply text-center text-gray-500;
-        font-family: 'Source Serif Pro', serif;
-      }
-    
-      hr {
-        @apply border-dotted border-t-4 border-pink-600 w-1/2 mx-auto my-4; 
-      }
-    
-      p {
-        @apply py-2;
-    
-        a {
-          @apply underline;
-        }
-      }
-    
-      code {
-        @apply bg-gray-200 text-pink-600;
-      }
-  
-      ul {
-        @apply list-disc;
-      }
-      ul.tags {
-        @apply list-none;
-        li {
-          @apply transform rotate-12 -skew-y-12 float-left block bg-pink-600 px-2 py-1 text-sm text-white mr-0;
-        }
-        li:nth-child(2n+0) {
-          @apply bg-indigo-600
-        }
-        li:nth-child(3n+0) {
-          @apply bg-purple-600
-        }
-      }
-    }
-  
-    footer {
-      @apply bg-pink-600 border-t-2 border-pink-800 py-6 mt-12;
-      h1 {
-        @apply font-black text-6xl capitalize tracking-tight py-4;
-      }
-      nav {
-        @apply container mx-auto max-w-screen-md p-12 text-white;
-  
-        ul {
-          li {
-            @apply text-lg underline leading-loose;
-          }
-        }
-      }
-      
-    }
+  body {
+    @apply border-pink-600 border-t-4;
+    font-family: 'Roboto', sans-serif;
   }
   
+  body.homepage {
+    background: #2a2a2a; border-top: 0; height: 100%;
+    #banner{
+      height: 66vh;
+      display: block;
+      text-indent: -9999px;
+    }
+    #desc{margin: 0 0 0 5vw; height: 15vh;}
+    h1{float: left; clear:both; letter-spacing: -1px; background-color: #fff; line-height: 7.5vh; font-size: 4.5vh; font-weight: bold; color: #2a2a2a; padding: 0 10px; margin: 0; white-space: nowrap;}
+    h2{float: left; clear:both; letter-spacing: -1px; background-color: #ff00f0; line-height: 7.5vh; font-size: 4vh; font-weight: normal; color: #fff; padding: 0 10px; margin: 0; white-space: nowrap;}
+    #links{margin: 3vh 0 0 5vw;}
+    #links a{display: block; color: #ff00f0; text-decoration: underline;}
+    #links a img{width: 3.5vh; height: 3.5vh;}
+  }
+
+  img#logo {
+    @apply mx-auto my-4;
+    width: 40px; height: 40px;
+  }
+
+  header {
+    @apply bg-gray-700 py-4;
+    h1 {
+      @apply text-white text-6xl capitalize tracking-tight py-4;
+      font-family: 'Source Serif Pro', serif;
+      font-weight: 700;
+    }
+
+    h3.author {
+      @apply font-normal normal-case italic text-base text-gray-100 pt-0 pb-2;
+    }
+  }
+
+  article.post {
+    @apply p-6 text-lg;
+
+    h1 {
+      @apply font-black text-6xl capitalize tracking-tight py-4;
+    }
+
+    h2 {
+      @apply font-bold text-4xl capitalize tracking-tight pt-8 pb-2;
+    }
+  
+    h3 {
+      @apply font-bold text-2xl capitalize tracking-tight pt-8 pb-2;
+    }
+
+    blockquote {
+      @apply font-thin text-4xl tracking-tight p-4 italic text-pink-600 leading-normal border-t border-b border-pink-600 my-4;
+      font-family: 'EB Garamond', serif;
+  
+      p {
+        @apply px-16;
+      }
+    }
+  
+    img {
+      @apply mx-auto mt-4 w-full;
+    }
+  
+    figcaption {
+      @apply text-center text-gray-500;
+      font-family: 'Source Serif Pro', serif;
+    }
+  
+    hr {
+      @apply border-dotted border-t-4 border-pink-600 w-1/2 mx-auto my-4; 
+    }
+  
+    p {
+      @apply py-2;
+  
+      a {
+        @apply underline;
+      }
+    }
+  
+    code {
+      @apply bg-gray-200 text-pink-600;
+    }
+
+    ul {
+      @apply list-disc;
+    }
+    ul.tags {
+      @apply list-none;
+      li {
+        @apply transform rotate-12 -skew-y-12 float-left block bg-pink-600 px-2 py-1 text-sm text-white mr-0;
+      }
+      li:nth-child(2n+0) {
+        @apply bg-indigo-600
+      }
+      li:nth-child(3n+0) {
+        @apply bg-purple-600
+      }
+    }
+  }
+
+  footer {
+    @apply bg-pink-600 border-t-2 border-pink-800 py-6 mt-12;
+    h1 {
+      @apply font-black text-6xl capitalize tracking-tight py-4;
+    }
+    nav {
+      @apply container mx-auto max-w-screen-md p-12 text-white;
+
+      ul {
+        li {
+          @apply text-lg underline leading-loose;
+        }
+      }
+    }
+    
+  }
+}
